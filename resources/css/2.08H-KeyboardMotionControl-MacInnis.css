@@ -1,0 +1,196 @@
+body {
+    /*grey*/ background-color: rgb(102,102,102);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    color: #fff;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#nameLabelID {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    top: 120px;
+    left: 0px;
+    width: 400px;
+    /* Make sure the form input is a certain width/height */
+    margin-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.flippedClass {
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -ms-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
+  transform:rotateY(180deg);
+}
+
+#leftArrowID {
+    position: relative;
+    left: 0px;
+    width: 50px;
+}
+
+#rightArrowID {
+    position: relative;
+    left: 120px;
+    width: 50px;
+}
+
+#titleID {
+    position: relative;
+    left: 70px;
+    top: -70px;
+}
+
+#enemy1ID {
+    position: relative;
+    z-index: 1;
+}
+
+#gameWindowID {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -320px;
+    width: 640px;
+    height: 640px;
+    border: 2px solid white;
+    background-image: url("images/background.png");
+    background-size: contain;
+    visibility: hidden;
+
+    image-rendering:optimizeSpeed;             /* Legal fallback */
+    image-rendering:-moz-crisp-edges;          /* Firefox        */
+    image-rendering:-o-crisp-edges;            /* Opera          */
+    image-rendering:-webkit-optimize-contrast; /* Safari         */
+    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+    image-rendering:crisp-edges;               /* CSS4 Proposed  */
+    image-rendering:pixelated;                 /* CSS4 Proposed  */
+    -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+
+    /* Don't allow the user to interact with this page
+        e.g., no dragging, no touching, no selecting  */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    z-index: -999;
+}
+
+#wrestlingRingID {
+    position: relative;
+    width: 100%;
+    top: -220px;
+    z-index: -1;
+}
+
+#backWrestlingRingID {
+    position: relative;
+    width: 100%;
+    top: -220px;
+    z-index: 0;
+}
+
+#frontWrestlingRingID {
+    position: relative;
+    width: 100%;
+    top: -825px;
+    z-index: 100;
+}
+
+#startButtonID {
+    position: relative;
+    top: 130px;
+    width: 275px;
+    height: 40px;
+    border: black;
+    background: #fff;
+    border: 2px solid #000;
+    font-family: 'Press Start 2P', cursive;
+
+    /* Make sure the form input is a certain width/height */
+    margin-left: 160px;
+    margin-right: 100px;
+}
+
+#characterDisplayID {
+    position: absolute;
+    width: 120px;
+    background-color: white;
+    image-rendering:optimizeSpeed;             /* Legal fallback */
+    image-rendering:-moz-crisp-edges;          /* Firefox        */
+    image-rendering:-o-crisp-edges;            /* Opera          */
+    image-rendering:-webkit-optimize-contrast; /* Safari         */
+    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+    image-rendering:crisp-edges;               /* CSS4 Proposed  */
+    image-rendering:pixelated;                 /* CSS4 Proposed  */
+    -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+}
+
+#modalTitleID {
+    position: relative;
+    left: 50px;
+}
+
+#startMenuHeadingID {
+    text-align: center;
+    position: relative;
+}
+
+#characterSelectID {
+    position: relative;
+    margin-left: 200px;
+    width: 200px; 
+}
+
+#startModalID {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0 0 -320px;
+    width: 640px;
+    height: 480px;
+    border: 4px solid brown;
+    background-color: black;
+
+    /* Don't allow the user to interact with this page
+        e.g., no dragging, no touching, no selecting  */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#playerID {
+    position: relative;
+    top: 0px;
+    left: 200px;
+    z-index: 1;
+}
+
+#refereeID {
+    position: relative;
+    top: -55px;
+    z-index: -2;
+}
+
+#reporterID {
+    position: relative;
+    top: 300px;
+}

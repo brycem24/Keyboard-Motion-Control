@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Keyboard motion control</title>
+		<meta 
+			name="description" 
+			content="Assignment: Use Javascript to move an image around using the keyboard">
+		<meta name="author" content="Bryce MacInnis">
+		<!--
+			Change log:
+				Created:	6. Oct 2015												- Drapak	
+				Modified:	21. March 2017	- moved script to bottom 				- Drapak
+							23. March 2017	- added more instructions				- Drapak
+							30. April 2017	- fixed long lines						- Drapak
+							20. March 2018  - began working on WrestleMania!!!		- MacInnis
+							5. April 2018	- returned to work on WrestleMania!!! 	- MacInnis
+							6. April 2018 	- cleaned up code for submission
+							
+				Finished:	6. April 2018
+				NOTE: This project will be returned to at a later date.
+		-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link href="resources/css/2.08H-KeyboardMotionControl-MacInnis.css" rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<!--
+			Evaluation checklist:
+		
+			___/10 	INPUT:
+				[X]	listen for keypresses
+				[X]	read which key is pressed
+				[X]	read current top position
+				[X]	read current left position
+		
+			___/10	PROCESS: including:
+				[X]	use math to determine positions
+				[X]	use if...else statements to control flow of code
+				[X]	have up and down movement working correctly
+				[X]	have left and right movement working correctly
+		
+			___/10 	OUTPUT: including:
+				[X]	set the position mode so things can move
+				[X]	change the left position of something
+				[X]	change the top position of something
+				[X]	change a image
+		
+			___/10 	STYLE: honouring all STYLE sections,
+					especially choosing descriptive variable names
+		-->
+
+		<div id="gameWindowID">
+	        <h1 id="titleID">Wrestlemania!!!</h1>
+	       	<img id="playerID" 
+	       		 alt="Player"
+	       		 src="resources/characters/1.png">
+	        <img id="enemy1ID"
+	        	 alt="Enemy"
+	        	 src="resources/characters/2.png">
+	        <img id="reporterID"
+	        	 alt="Reporter" 
+	        	 src="resources/characters/reporter.png">
+	        <img id="refereeID" 
+	     		 alt="Referee" 
+	     		 src="resources/characters/referee.png">
+	        <img id="backWrestlingRingID" 
+	  			 alt="Back Wrestling Ring"
+	  			 src="resources/css/images/backWrestlingRing.png">
+	        <img id="frontWrestlingRingID"
+	        	 alt="Front Wrestling Ring"
+	        	 src="resources/css/images/frontWrestlingRing.png">
+	    </div>
+
+	    <!-- UI for selecting characters and starting games --> 
+	    <div id="startModalID">
+	    	<h1 id="startMenuHeadingID">Get Ready To <br>Rumble!</h1>
+	        <div id="characterSelectID">
+	        	<img id="leftArrowID" 
+	        		 alt="Left Arrow"
+	        		 src="resources/css/images/arrow.png" 
+	        		 class="flippedClass">
+	        	<img id="characterDisplayID" 
+	        		 alt="Your Character" 
+	        		 src="resources/characters/1.png">
+	        	<img id="rightArrowID"
+	        		 alt="Right Arrow" 
+	        		 src="resources/css/images/arrow.png">
+	        </div>
+	        <input id="nameLabelID" placeholder="What do they call you?">
+	        <button type="button" id="startButtonID">Start</button>
+	    </div>
+
+	    <!-- Play background music --> 
+		<audio controls autoplay hidden loop>
+	        <source src="resources/audio/house.mp3" type="audio/mpeg">
+	        Your browser does not support the audio element.
+	    </audio>
+
+	    <!-- Imports -->
+	    <script src="resources/js/2.08H-Vector2-MacInnis.js"></script>
+	    <script src="resources/js/2.08H-Input-MacInnis.js"></script>
+	   	<script src="resources/js/2.08H-CharacterSelect-MacInnis.js"></script>
+	    <script src="resources/js/2.08H-Player-MacInnis.js"></script>
+	    <script src="resources/js/2.08H-Wrestler-MacInnis.js"></script>
+	    <script src="resources/js/2.08H-Bystanders-MacInnis.js"></script>
+		<script src="resources/js/2.08H-KeyboardMotionControl-MacInnis.js"></script>
+	</body>
+</html>
